@@ -16,4 +16,7 @@ To compile the project, ensure you have Java installed and run:
 
 ```bash
 javac WebServer.java
+java WebServer <port> <root> <timeout>
+java WebServer 8080 /var/www 300000
+
 **
