@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a multi-threaded web server that supports non-persistent connections. The server listens for client requests and handles them using worker threads.
+This project implements a multi-threaded web server that supports non-persistent connections The server listens for client requests and handles them using worker threads.
 
 ## Files
 
