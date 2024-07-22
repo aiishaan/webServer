@@ -6,7 +6,7 @@ This project implements a multi-threaded web server that supports non-persistent
 
 ## Files
 
-- `WebServer.java`: Contains the logic for initializing the server, accepting client connections, and managing worker threads.
+- `WebServer.java`: Contains the logic for initializing the server, accepting client connections, and managing worker threads
 
 ## Usage
 
