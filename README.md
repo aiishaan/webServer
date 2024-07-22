@@ -8,11 +8,11 @@ This project implements a multi-threaded web server that supports non-persistent
 
 - `WebServer.java`: Contains the logic for initializing the server, accepting client connections, and managing worker threads.
 
-## Usage
+## Usage.
 
-### Compilation
+### Compilation.
 
-To compile the project, ensure you have Java installed and run:
+To compile the project, ensure you have Java installed and run
 
 ```bash
 javac WebServer.java
