@@ -12,7 +12,7 @@ This project implements a multi-threaded web server that supports non-persistent
 
 ### Compilation
 
-To compile the project, ensure you have Java installed and run
+To compile the project, ensure you have Java installed and run:
 
 ```bash
 javac WebServer.java
