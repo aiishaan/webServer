@@ -59,8 +59,9 @@ To use this web server:
 
 1. Compile all Java files.
 2. Run the ServerDriver class with desired command-line options. For example:
-  ```bash
-  java ServerDriver -p 8080 -r /path/to/web/root -t 5000 -v info
+    ```sh
+    java ServerDriver -p 8080 -r /path/to/web/root -t 5000 -v info
+    ```
 3. The server will start and display configuration information.
 4. Type "quit" in the console to stop the server gracefully.
 
