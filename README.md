@@ -1,21 +1,61 @@
 # Multi-threaded HTTP Web Server
 
-This project implements a simple multi-threaded HTTP web server in Java, supporting non-persistent connections. The server listens for incoming client requests, processes them, and serves the requested files from a specified root directory.
+This is a Java implementation of a multi-threaded HTTP web server that supports non-persistent connections. The project consists of three main files: `WebServer.java`, `ServerDriver.java`, and `ServerUtils.java`.
 
 ## Features
 
-- **Multi-threading**: Each client request is handled in a separate thread, allowing the server to manage multiple connections concurrently.
-- **Non-Persistent Connections**: The server closes the connection after serving each client request.
-- **Request Timeout**: Configurable timeout for idle connections.
-- **Response Handling**: The server supports basic HTTP responses, including `200 OK`, `400 Bad Request`, `404 Not Found`, and `408 Request Timeout`.
+- Multi-threaded server capable of handling multiple client connections simultaneously
+- Supports GET requests for static files
+- Implements basic HTTP/1.1 protocol
+- Configurable server port, root directory, and connection timeout
+- Graceful shutdown mechanism
+- Command-line interface for starting and stopping the server
+- Utility methods for handling HTTP-specific date formats and file properties
 
-## Class Overview
+## Main Components
 
-### `WebServer`
+### 1. WebServer Class (WebServer.java)
 
-The `WebServer` class is responsible for managing the server's lifecycle. It listens for incoming connections on a specified port, creates worker threads to handle each connection, and supports server shutdown.
+The `WebServer` class is the core of the server, setting up the server socket and managing client connections.
 
-#### Constructor
+#### Key Methods:
 
-```java
-public WebServer(int port, String root, int timeout)
+- `WebServer(int port, String root, int timeout)`: Constructor to initialize the web server
+- `run()`: Main method that keeps the server running and accepting new connections
+- `shutdown()`: Method to signal the server to shut down
+
+### 2. ServerDriver Class (ServerDriver.java)
+
+The `ServerDriver` class serves as the entry point for the application, handling command-line arguments and server lifecycle.
+
+#### Key Functionalities:
+
+- Parses command-line arguments for server configuration
+- Sets up logging
+- Initializes and starts the WebServer
+- Provides a command-line interface to stop the server
+
+#### Command-line Options:
+
+- `-p`: Server port number (default: 2025)
+- `-t`: Idle connection timeout in milliseconds (default: 0, meaning infinity)
+- `-r`: Root directory of the web server (default: current directory)
+- `-v`: Log level (options: all, info, off; default: all)
+
+### 3. ServerUtils Class (ServerUtils.java)
+
+The `ServerUtils` class provides utility methods for handling HTTP-specific operations and file properties.
+
+#### Key Methods:
+
+- `getCurrentDate()`: Returns the current date in HTTP format
+- `getContentType(File object)`: Determines the content type of a file
+- `getContentLength(File object)`: Returns the content length of a file
+- `getLastModified(File object)`: Returns the last modified date of a file
+
+## Usage
+
+To use this web server:
+
+1. Compile all Java files.
+2. Run the ServerDriver class with desired command-line options. For example:
