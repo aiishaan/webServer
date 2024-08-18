@@ -1,22 +1,21 @@
-# WebServer Project
+# Multi-threaded HTTP Web Server
 
-## Overview
+This project implements a simple multi-threaded HTTP web server in Java, supporting non-persistent connections. The server listens for incoming client requests, processes them, and serves the requested files from a specified root directory.
 
-This project implements a multi-threaded web server that supports non-persistent connections. The server listens for client requests and handles them using worker threads.
+## Features
 
-## Files
+- **Multi-threading**: Each client request is handled in a separate thread, allowing the server to manage multiple connections concurrently.
+- **Non-Persistent Connections**: The server closes the connection after serving each client request.
+- **Request Timeout**: Configurable timeout for idle connections.
+- **Response Handling**: The server supports basic HTTP responses, including `200 OK`, `400 Bad Request`, `404 Not Found`, and `408 Request Timeout`.
 
-- `WebServer.java`: Contains the logic for initializing the server, accepting client connections, and managing worker threads.
+## Class Overview
 
-## Usage
+### `WebServer`
 
-### Compilation
+The `WebServer` class is responsible for managing the server's lifecycle. It listens for incoming connections on a specified port, creates worker threads to handle each connection, and supports server shutdown.
 
-To compile the project, ensure you have Java installed and run:
+#### Constructor
 
-```bash
-javac WebServer.java
-java WebServer <port> <root> <timeout>
-java WebServer 8080 /var/www 300000
-
-**
+```java
+public WebServer(int port, String root, int timeout)
