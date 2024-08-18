@@ -59,3 +59,32 @@ To use this web server:
 
 1. Compile all Java files.
 2. Run the ServerDriver class with desired command-line options. For example:
+  ```bash
+  java ServerDriver -p 8080 -r /path/to/web/root -t 5000 -v info
+3. The server will start and display configuration information.
+4. Type "quit" in the console to stop the server gracefully.
+
+## HTTP Response Handling
+
+The server handles the following scenarios:
+
+- 200 OK: When a requested file is found and served successfully
+- 400 Bad Request: For malformed requests or unsupported methods
+- 404 Not Found: When a requested file doesn't exist
+- 408 Request Timeout: When a client connection times out
+
+## Dependencies
+
+This implementation uses Java's built-in networking, I/O, and logging libraries.
+
+## Limitations
+
+- Only supports GET requests
+- Does not support persistent connections
+
+## Future Improvements
+
+- Add support for POST and other HTTP methods
+- Implement persistent connections
+- Enhance error handling capabilities
+- Add configuration file support for easier deployment
