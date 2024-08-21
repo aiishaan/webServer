@@ -10,7 +10,7 @@ This is a Java implementation of a multi-threaded HTTP web server that supports 
 - Configurable server port, root directory, and connection timeout.
 - Graceful shutdown mechanism
 - Command-line interface for starting and stopping the server
-- Utility methods for handling HTTP-specific date formats and file properties
+- Utility methods for handling HTTP-specific date formats and file properties.
 
 ## Main Components
 
