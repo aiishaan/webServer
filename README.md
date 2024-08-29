@@ -8,7 +8,7 @@ This is a Java implementation of a multi-threaded HTTP web server that supports 
 - Supports GET requests for static files.
 - Implements basic HTTP/1.1 protocol.
 - Configurable server port, root directory, and connection timeout.
-- Graceful shutdown mechanism.
+- Graceful shutdown mechanism
 - Command-line interface for starting and stopping the server
 - Utility methods for handling HTTP-specific date formats and file properties
 
