@@ -26,7 +26,7 @@ The `WebServer` class is the core of the server, setting up the server socket an
 
 ### 2. ServerDriver Class (ServerDriver.java)
 
-The `ServerDriver` class serves as the entry point for the application, handling command-line arguments and server lifecycle.
+The `ServerDriver` class serves as the entry point for the application, handling command-line arguments and server lifecycle
 
 #### Key Functionalities:
 
