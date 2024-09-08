@@ -16,7 +16,7 @@ This is a Java implementation of a multi-threaded HTTP web server that supports 
 
 ### 1. WebServer Class (WebServer.java)
 
-The `WebServer` class is the core of the server, setting up the server socket and managing client connections.
+The `WebServer` class is the core of the server, setting up the server socket and managing client connections
 
 #### Key Methods:
 
