@@ -76,7 +76,7 @@ The server handles the following scenarios:
 
 ## Dependencies
 
-This implementation uses Java's built-in networking, I/O, and logging libraries.
+This implementation uses Java's built-in networking, I/O, and logging libraries
 
 ## Limitations
 
