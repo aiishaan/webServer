@@ -44,7 +44,7 @@ The `ServerDriver` class serves as the entry point for the application, handling
 
 ### 3. ServerUtils Class (ServerUtils.java)
 
-The `ServerUtils` class provides utility methods for handling HTTP-specific operations and file properties.
+The `ServerUtils` class provides utility methods for handling HTTP-specific operations and file properties
 
 #### Key Methods:
 
