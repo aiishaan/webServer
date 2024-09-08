@@ -1,6 +1,6 @@
 # Multi-threaded HTTP Web Server
 
-This is a Java implementation of a multi-threaded HTTP web server that supports non-persistent connections. The project consists of three main files: `WebServer.java`, `ServerDriver.java`, and `ServerUtils.java`
+This is a Java implementation of a multi-threaded HTTP web server that supports non-persistent connections. The project consists of three main files: `WebServer.java`, `ServerDriver.java`, and `ServerUtils.java`.
 
 ## Features
 
