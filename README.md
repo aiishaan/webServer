@@ -5,7 +5,7 @@ This is a Java implementation of a multi-threaded HTTP web server that supports 
 ## Features
 
 - Multi-threaded server capable of handling multiple client connections simultaneously
-- Supports GET requests for static files
+- Supports GET requests for static files.
 - Implements basic HTTP/1.1 protocol
 - Configurable server port, root directory, and connection timeout
 - Graceful shutdown mechanism
